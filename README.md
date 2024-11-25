@@ -1,75 +1,88 @@
 # Hvordan lage en applikasjon i React/Vue/SvelteKit
-## Startupp
-### Vis du ikke allerede har en fil til scriptene dine må du lage det.
-- Gå inn på file explorer.
-- Fin hvor du vill lage denne filem.
-- Høyre click, new file, og gi den et navn.
+
+## Oppstart
+
+### Opprett en mappe for prosjektet
+- Åpne **File Explorer**.
+- Finn hvor du vil opprette prosjektet.
+- Høyreklikk, velg **Ny fil** eller **Ny mappe**, og gi den et navn.
 
 ---
-### Etter dette må du få deg inn på terminalen og inn på den valgte filen.
-- Gå inn på terminalen (åpne windows, søk opp "Command Prompt", trykk inn på den).
-#### Inne på terminalen må du finne filen du nettop lagde.
-- skriv ```cd file``` bytt ut filen med veien til din fil.
-  - Som for eksempel ```cd C:\Users\Pc\React```
-Det kan hende du får en error på dette.
-- Da trenget du bare og ha "" rundt filen sin vei.
+
+### Åpne terminalen og naviger til mappen
+- Åpne **Command Prompt** (Windows):
+  - Trykk på **Start**, skriv inn "Command Prompt", og åpne programmet.
+- Naviger til mappen du nettopp opprettet ved å skrive `cd <sti-til-mappen>`.
+  - Eksempel: `cd C:\Users\Pc\React`
+- Hvis du får en feilmelding, sett stien i anførselstegn: `cd "C:\Users\Pc\React"`
 
 ---
-## Settup
-### Nå som du har gått inn på filen i terminalen så kan du lage filen.
-- Skriv ``` npm create vite@latest ```
-#### Etter du har gjort dette vil du få ```Project name: » vite-project```
-- Skriv inn et navn, dette navnet vil være navnet på filen.
-#### Etter dette vil du få opp ```Package name:```, Dette kan du trykke "Enter" på.
 
-### Nå kan du velge hvaslaks file du vil lage på en liste av forkjelige ting 
-- Select a framework: » - Use arrow-keys. Return to submit.
-    - Vanilla
-    - Vue
-    - React
-    - Preact
-    - Lit
-    - Svelte
-    - Solid
-    - Qwik
-    - Angular
-    - Others
-#### Bla opp og ned med pilltastene, og du kan velge med og trykke enter.
-#### Etter du valgt noe vil du få opp noen andre forslag, kommer andpå hva du valgte.
-#### Du vil uansett på opp noen form for Typescript and Javascript, men resten kommer andpå hva valgte.
-#### La oss ta react for et eksempel, da vill det komme opp.
-- Select a variant: » - Use arrow-keys. Return to submit.
-    - TypeScript
-    - TypeScript + SWC
-    - JavaScript
-    - JavaScript + SWC
-    - Remix
----
-## Install
-#### La oss si at du valgte vanelig TypeScript.
-#### Du vill få opp 3 ting du kan kopigjere og lime inn ighen.
-- Marker det
-- Ctrl + c
-- ctrl + v
-```
-  cd file
-  npm install
-  npm run dev
-```
-#### Når du har gjort dette vill du få en install.
-#### Etter dette kan du skrive in "npm run dev" eller trykke enter vis det allerede står.
-#### Hold inne ctrl og trykk på "Local:" https://loaclhost:0000/" linken (De 4 nummerne vill være andeledes for deg)
-#### Dette vill åpne en tab på din seach engine som nettsiden din er på.
+## Oppsett
+
+### Opprett prosjektet med Vite
+- Når du er i riktig mappe i terminalen, skriv `npm create vite@latest`.
+- Du vil se:
+  `Project name: » vite-project`
+  - Skriv inn et ønsket navn på prosjektet ditt og trykk **Enter**.
+
+- Deretter ser du:
+  `Package name:`
+  - Trykk **Enter** for å godta standardverdien.
+
+- Velg rammeverk:
+  - Du får en liste over alternativer som ser slik ut:
+    - `Vanilla`
+    - `Vue`
+    - `React`
+    - `Preact`
+    - `Lit`
+    - `Svelte`
+    - `Solid`
+    - `Qwik`
+    - `Angular`
+    - `Others`
+  - Bruk piltastene til å navigere og trykk **Enter** for å velge.
+
+- Avhengig av valget ditt, vil du få flere alternativer:
+  - For eksempel, hvis du velger **React**, vil du se:
+    - `TypeScript`
+    - `TypeScript + SWC`
+    - `JavaScript`
+    - `JavaScript + SWC`
+    - `Remix`
+  - Velg ønsket variant og trykk **Enter**.
 
 ---
-## Endring
-### Nå kan du endre på projektet ditt vis du vill.
-#### Du trenger ikke og slutte nettsiden, men vis du vill så kan du trykke "Ctrl + c" og så "y"
-#### Får og endre nettsiden din så trenger du en applikasjon du kan endre på scripts med. "Visual Studio Code"
 
-#### På Visual Studio Code "VS Code" kan du gå inn, finne filen du lagde denne nettsiden inni og dær kan du endre alt.
-#### Du vill se mye forkjelig, "html scripts, json scripts og ts script" dette trenger du egentlig ikke og endre på.
-#### Tingene du hovedsanklig kan endre på er inne på src filen, dær vill du see "tsx scripts, css scripts og d.ts"
-#### Hovedtingen det er vits og endre på er App.tsx scriptet, det er basickly som html scriptet på en html og css nettside.
-# Du vil også ha en node_modules file, i denne filen er det utroig mange filer som du ikke trenger og tenke på, det er veldig mange packagers og mye annet.
+## Installering
 
+### Installer prosjektet
+- Etter å ha opprettet prosjektet, kopier og lim inn følgende kommandoer i terminalen:
+  1. `cd <prosjektmappe>`
+  2. `npm install`
+  3. `npm run dev`
+
+- Når du kjører `npm run dev`, vil terminalen vise noe slikt:
+  `Local: http://localhost:3000/`
+- Hold inne **Ctrl** og klikk på linken for å åpne applikasjonen i nettleseren.
+
+---
+
+## Endringer
+
+### Rediger prosjektet
+- Du kan bruke en kode-editor som **Visual Studio Code (VS Code)** for å redigere prosjektet.
+- Åpne prosjektmappen i VS Code:
+  - Gå til `src`-mappen for å finne de viktigste filene, som:
+    - `App.tsx` (React)
+    - `App.vue` (Vue)
+    - `App.svelte` (Svelte)
+  - Her kan du legge til eller endre komponenter, CSS-stiler og funksjonalitet.
+- Hvis du vil stoppe serveren midlertidig, trykk `Ctrl + C` i terminalen og bekreft med `y`.
+
+---
+
+## Tips
+- Ikke bekymre deg for filer i `node_modules`. Dette er avhengigheter som prosjektet bruker, og du trenger vanligvis ikke å endre noe her.
+- Lagre ofte, og sjekk nettleseren for å se endringer live.
