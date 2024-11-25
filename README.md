@@ -1,5 +1,15 @@
 # Hvordan lage en applikasjon i React/Vue/SvelteKit
 
+## Hva du vil lære
+- Hvordan opprette en ny mappe for prosjektet ditt.
+- Hvordan installere Node.js og bruke npm for å håndtere pakker.
+- Hvordan bruke terminalen for å navigere og sette opp prosjektet ditt.
+- Hvordan opprette et nytt prosjekt ved hjelp av Vite og velge rammeverk (React, Vue, SvelteKit).
+- Hvordan installere nødvendige avhengigheter og kjøre applikasjonen.
+- Hvordan gjøre endringer på prosjektet ditt ved å bruke Visual Studio Code.
+
+---
+
 ## Oppstart
 
 ### Opprett en mappe for prosjektet
