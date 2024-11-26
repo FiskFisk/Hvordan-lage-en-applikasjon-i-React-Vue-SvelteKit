@@ -100,12 +100,11 @@ npm -v
 
 ### Installer prosjektet
 - Etter å ha opprettet prosjektet, kopier og lim inn følgende kommandoer i terminalen:
-  bash
+  ```
   cd <prosjektmappe>
-  bash
   npm install
-  bash
   npm run dev
+  ```
 
 - Når du kjører `npm run dev`, vil terminalen vise noe slikt:
   `Local: http://localhost:3000/`
