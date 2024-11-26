@@ -54,7 +54,6 @@ npm -v
 
 ### Opprett prosjektet med Vite
 - Når du er i riktig mappe i terminalen, skriv:
-  bash
   `npm create vite@latest`
 - Følg instruksjonene:
   - Du vil se:
