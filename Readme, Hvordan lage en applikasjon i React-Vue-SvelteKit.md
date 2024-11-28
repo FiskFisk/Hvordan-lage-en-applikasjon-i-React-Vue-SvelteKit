@@ -36,7 +36,7 @@ npm -v
 
 ### Åpne terminalen og naviger til mappen
 - Åpne **Command Prompt** (Windows):
-  - Trykk på **Start**, skriv inn "Command Prompt", og åpne programmet.
+  - Trykk på **Windows**, skriv inn "Command Prompt", og åpne programmet.
 - Naviger til mappen du nettopp opprettet ved å skrive:
   bash
   cd <sti-til-mappen>
@@ -98,10 +98,18 @@ npm -v
 ## Installering
 
 ### Installer prosjektet
+- Nå har du laget en ny mappe inne i den mappen du lagde i sta. 
 - Etter å ha opprettet prosjektet, kopier og lim inn følgende kommandoer i terminalen:
+- Cd og så navnet på mappen du nettop lagde.
   ```
   cd <prosjektmappe>
+  ```
+- Så skriver du dette for og installere tingene.
+  ```
   npm install
+  ```
+- Sist kan du skrive denne koden for og starte nettsiden.
+  ```
   npm run dev
   ```
 
